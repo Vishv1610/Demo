@@ -1,0 +1,944 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+/* ======================= START HEADER SECTION==================== */
+#header-home{
+	background: url('Images/header-bg.jpg') no-repeat center center/cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+#header{
+	/* background: url('Images/header-bg.jpg') no-repeat center center/cover; */
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+/* ---------------------START NAVBAR SECTION---------------------  */
+#navbar{
+	width: 100%;
+	background: #00aeda;
+	/* background: rgba(0, 0, 0, 0.4); */
+	display: flex;
+	align-items: center;
+	padding: 20px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border: black;
+	border-radius:1px;
+}
+/* -----------------------START NAVBAR LOGO SECTION--------------------------- */
+.logo{
+	width: 40%;
+	padding-left: 100px;
+}
+
+.logo .logoHeading{
+	color: white;
+	text-transform: uppercase;
+}
+/* ------------------------END NAVBAR LOGO SECTION-------------------------- */
+.appform
+{
+	width: 70%;
+	height: 700px;
+	background: rgba(0, 174, 218, 0.5);
+	padding: 15px 50px;
+	/* padding-left: 50px; */
+	align-self: center;
+	/* display:flex; */
+	/* flex-direction:column; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+	/* box-align: center; */
+}
+.appform .appbox
+{
+	width: 100%;
+	/* background: grey; */
+	display: flex;
+	/* padding-left: 50px; */
+	justify-content: space-evenly;
+	align-items:center;
+	padding-top: 0px;
+	padding: 0px 0px 15px 0px;
+	align-self: center;
+	
+}
+.appform .appheader h1
+{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 40px;
+}
+.appform .formcontent h3{
+	font-size: 23px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.appform .formcontent td{
+	font-size: 23px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	align-self: center;
+}
+.appform .formcontent input
+{
+	align-self: center;
+	display: flex;
+	justify-content: space-evenly;
+	height: 30px;
+	width: 280px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	border-radius: 50px;
+	padding-inline: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+.appform .formcontent input:hover
+{
+	font-size: 20px;
+}
+.appform .formcontent select:hover
+{
+	font-size: 20px;
+}
+
+.appform .formcontent select
+{
+	font-size: 20px;
+}
+.appform .formcontent textarea
+{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	border-radius: 10px;
+	padding-inline: 10px;
+	font-size: 18px;
+	text-align: center;
+}
+.appform .formcontent select{
+	font-size: 18px;
+	border-radius: 50px;
+	text-align: center;
+	width: 100%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn{
+display: block;
+	color: b;
+    background: rgb(0, 174, 218);
+    border: 1px solid rgb(2, 2, 3);
+    border-radius: 30px;
+	padding: 20px 40px;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: blanchedalmond;
+	text-shadow: 3px 3px 3px black;
+	transition: 0.5s;
+}
+.btn:hover
+{
+	background: rgba(0, 0, 0, 0.7);
+	border: 1px solid blue;
+	color: white;
+	box-shadow: 5px 5px 5px black;
+	text-shadow: 1px 1px 1px #000000;
+	transition: 0.5s;
+}
+/* -----------------------START MAIN MENU SECTION ------------------------- */
+#mainMenu{
+	width: 100%;
+	display:inline-flex;
+	align-items: center; 
+	list-style-type: none;
+	margin-left: 200px;
+}
+
+#mainMenu li{
+	padding: 0px 2px;
+}
+
+#mainMenu li a{
+	color: white;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	letter-spacing: 1px;
+	position: relative;
+	top: 0px;
+	left: 5px;
+	
+}
+
+#mainMenu li a::after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 0%;
+	height: 20%;
+	border-bottom: 3px solid white;
+	transition: all 0.5s linear;
+}
+
+#mainMenu li a:hover::after{
+	width: 100%;
+}
+/* ---------------------------END MAIN MENU SECTION -------------------------- */
+
+/* --------------------END NAVBAR SECTION----------------------------- */
+
+/* ------------------START HEADER BODY-CONTENT SECTION ----------------------- */
+#header-content{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header-contentBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+}
+
+#header-content h1{
+	color: black;
+	text-transform: uppercase;
+	font-size: 60px;
+	margin-bottom: 20px;
+}
+
+#header-content p{
+	color: black;
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 30px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* -------------------------START BUTTON SECTION (GET STARTED) ----------------------- */
+#header-content .btn{
+	display: block;
+	color: #FFFFFF;
+    background: #00aeda;
+    border: 1px solid black;
+    border-radius: 30px;
+	padding: 20px 40px;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-shadow: 3px 3px 3px #00aeda;
+	transition: 0.5s;
+}
+
+#header-content .btn:hover{
+	background: rgba(0, 0, 0, 0.7);
+	border: 1px solid #00aeda;
+	color: #00aeda;
+	box-shadow: 5px 5px 5px black;
+	text-shadow: 1px 1px 1px #000000;
+	transition: 0.5s;
+}
+/* -------------------------END BUTTON SECTION (GET STARTED)  ------------------- */
+
+/* -----------------------END HEADER BODY-CONTENT SECTION ----------------------- */
+
+.gbody
+{
+	background: url('Images/header-bg.jpg') no-repeat center center/cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.gtitle
+{
+	/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: oblique;
+	font-size:60px;
+}
+.gimg
+{
+	height: 400px;
+	width: 400px;
+}
+.gimg:hover
+{
+	box-shadow:0 0 7px 10px rgba(0, 0, 0, 0.541);
+}
+
+/* =====================================END HEADER SECTION========================================= */
+
+/* ========================START CLASSES SECTION======================== */
+
+/* ---------------START CLASSES BACKGROUND--------------- */
+#classes{
+	background-image: url("Images/header-bg.jpg");
+	/* opacity: 50%; */
+	/* backface-visibility: 50% ; */
+}
+/* --------------END CLASSES BACKGROUND----------------- */
+
+/* ------------START CLASSES TOP CONTENT------------- */
+.classes-textbox{
+	width: 100%;
+	padding: 100px 300px 60px 300px;
+}
+
+.classes-textbox h1{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: black;
+	margin-bottom: 30px;
+}
+
+.classes-textbox p{
+	text-align: center;
+	color: black;
+	/* font-weight: bold; */
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	/* background: #000; */
+}
+/* -------------END CLASSES TOP CONTENT--------------- */
+
+/* -----------------START ITEMS BOX SECTION--------------  */
+.classes-itemsbox{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 50px;
+}
+/* -----------------START ITEMS---------------------- */
+.classes-itemsbox .items{
+	width: 25%;
+	margin: 0px 40px 50px 40px;
+	/* padding: 0px 30px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.classes-itemsbox .items img{
+	height: 120px;
+	width: 120px;
+	border-style: solid;
+	border-spacing: 10px;
+	/* background: #00aeda; */
+	background: black;
+	border-radius: 100%;
+	margin-bottom: 20px;
+	
+	/* margin: 0px 40px; */
+}
+.classes-itemsbox .items img:hover
+{
+		width: 150px;
+		height: 150px;
+		border-color: black;
+}
+.classes-itemsbox .items h2{
+	font-size: 18px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.classes-itemsbox .items h2:hover
+{
+	font-size: 30px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.classes-itemsbox .items p{
+	text-align: center;
+	color: black;
+}
+/* -------------------END ITEMS------------------------ */
+
+/* ----------------END ITEMS BOX SECTION--------------- */
+
+/* ========================END CLASSES SECTION======================== */
+
+/* ==================START FEATURES SECTION==================== */
+
+/* -----------------------START FEATURES BACKGROUND--------------------- */
+#features{
+	width: 100%;
+}
+/* -----------------------END FEATURES BACKGROUND------------------------ */
+
+/* ------------START FEATURES TOP CONTENT---------------- */
+.features-textbox{
+	padding: 80px 0px 30px 0px;
+}
+
+.features-textbox h1{
+	text-align: center;
+	font-size: 50px;
+	margin: 0px 50px 10px 50px;
+}
+
+.features-textbox p{
+	text-align: center;
+	margin: 10px 350px;
+	/* word-spacing: 2px; */
+	font-size: 22px;
+
+}
+/* -------------END FEATURES TOP CONTENT----------------- */
+
+
+.containerItems{
+	display: flex;
+}
+
+.itemElement-Box{
+	width: 33.33%;
+	/* margin-left: 30px; */
+	/* margin-right: 30px; */
+}
+
+.itemElement-Box .itemElement{
+	width: 100%;
+	padding: 10px 30px;
+	/* margin-left: 50px; */
+}
+
+.itemElement-Box .itemElement img{
+	width: 150px;
+	margin-left: 280px;
+	/* margin-right: -20px; */
+}
+
+.itemElement-Box .itemElement p{
+	font-size: 20px;
+	text-align: right;
+	margin-left: 50px;
+}
+
+.containerImageBox{
+	width: 33.33%;
+}
+
+.containerImageBox img{
+	width: 100%;
+}
+
+.itemElement-Box2{
+	width: 33.33%;
+}
+
+.itemElement-Box2 .itemElement2{
+	width: 100%;
+	padding: 10px 30px;
+	/* margin-left: 0px; */
+}
+
+.itemElement-Box2 .itemElement2 img{
+	width: 150px;
+	margin-left: -40px;
+}
+
+.itemElement-Box2 .itemElement2 p{
+	font-size: 20px;
+	text-align: left;
+	margin-right: 50px;
+}
+/* ---------------------XXXXXXX------------------------------- */
+
+/* -----------START AFTER PROMISE BOX------------------- */
+.afterPromiseBox{
+	/* background: #dcdde1; */
+	overflow-x: hidden;
+
+}
+
+/* ===============START ITEM BOX=========================== */
+#itemBox1,#itemBox3{
+	background: #ecf0f1;
+	width: 100%;
+	display: flex;
+}
+
+#itemBox1 .imagePart, #itemBox3 .imagePart{
+	width: 50%;
+}
+
+#itemBox1 img, #itemBox3 img {
+	width: 600px;
+	margin: 100px 30px 100px 60px;
+}
+
+#itemBox1 .textPart , #itemBox3 .textPart{
+	width: 50%;
+	/* margin: 100px 100px 100px 40px; */
+	padding: 100px 200px 100px 50px;
+}
+
+#itemBox1 h1,#itemBox3 h1{
+	font-weight:bold;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+#itemBox1 p , #itemBox3 p{
+	font-size: 20px;
+	font-weight:500;
+	margin-bottom: 30px;
+}
+
+
+#itemBox1 ul li , #itemBox3 ul li{
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+#itemBox2 .textPart{
+	width: 50%;
+	/* margin: 100px 100px 100px 40px; */
+	padding: 100px 50px 100px 200px;
+}
+
+#itemBox2 h1{
+	font-weight:bold;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+#itemBox2 p{
+	font-size: 20px;
+	font-weight:500;
+	margin-bottom: 30px;
+}
+
+
+#itemBox2 ul li{
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+#itemBox2{
+	background: #f5f6fa;
+	width: 100%;
+	display: flex;
+}
+
+#itemBox2 .imagePart{
+	width: 50%;
+}
+
+#itemBox2 img{
+	width: 600px;
+	margin: 100px 60px 100px 30px;
+}
+
+/* ===============END ITEM BOX=========================== */
+/* -----------END AFTER PROMISE BOX------------------- */
+
+/* -------------START LASTCONTENTBOX OF FEATURES SECTION */
+
+.lastContentBox{
+	background: url('Images/bg1.jpg') no-repeat center center/cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lastContentBox .lastContentPart{
+	width: 100%;
+	height: 50%;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 100px;
+}
+
+.lastContentBox .lastContentPart h1{
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.lastContentBox .lastContentPart .btn{
+	display: block;
+	color: #FFFFFF;
+    background: #00aeda;
+    border: 1px solid #00aeda;
+    border-radius: 30px;
+    margin-top: 30px;
+	padding: 20px 40px;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-shadow: 3px 3px 3px #00aeda;
+	transition: 0.5s;
+}
+
+.lastContentBox .lastContentPart .btn:hover{
+	background: rgba(0, 0, 0, 0.7);
+	border: 1px solid #00aeda;
+	color: #00aeda;
+	box-shadow: 5px 5px 5px black;
+	text-shadow: 1px 1px 1px #00aeda;
+	transition: 0.5s;
+}
+/* -------------END LASTCONTENTBOX OF FEATURES SECTION */
+
+/* ===================END FEATURES SECTION======================= */
+
+/* ------------------START CLIENT REVIEW SECTION---------------------- */
+
+#review{
+	background:#00aeda;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+
+.Clients-Review{
+	width: 30%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 0px 10px;
+}
+
+.Clients-Review img{
+	width: 100px;
+	border-radius: 50%;
+	margin-bottom: 25px;
+	border-style: solid;
+}
+.Clients-Review img:hover
+{
+	width: 120px;
+	border-color: black;
+}
+
+.Clients-Review p{
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.Clients-Review span{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 10px;
+	align-items: center;
+	align-content: center;
+	/* text-align: center; */
+}
+/* ---------------------------------END CLIENT REVIEW SECTION------------------------------ */
+
+/* ======================START PRICE SECTION=======================  */
+#price{
+	background: rgba(0, 0, 0, 0.7); 
+}
+
+#price .packages{
+	width: 100%;
+	/* height: 20vh; */
+	padding: 60px 350px;
+}
+
+#price .packages h1{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+}
+
+#price .packages p{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	color: silver;
+}
+
+.packagesPlan{
+	width: 100%;
+	/* background: grey; */
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center;
+	padding: 0px 0px 60px 0px;
+}
+
+.packagesPlan .planBox{
+	width: 25%;
+	height: 70vh;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px 50px;
+	display:flex;
+	flex-direction:column;
+	/* justify-content: center; */
+	align-items: center;
+	box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.planBox h4{
+	color: silver;
+	font-size: 25px;
+	text-transform: capitalize;
+	margin: 20px 0px 10px 0px;
+}
+
+.planBox h1{
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: white;
+}
+
+.planBox p{
+	/* margin-top: 70px; */
+	color: silver;
+	font-size: 18px;
+	/* font-weight: bold; */
+	line-height: 20px;
+	/* text-align: justify; */
+	margin: 10px 0px 5px 0px;
+}
+
+.planBox .btn{
+	display: block;
+	color: #FFFFFF;
+    background: #00aeda;
+    /* border: 1px solid #00aeda; */
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+	padding: 20px 40px;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	text-shadow: 3px 3px 3px #00aeda;
+	transition: 0.5s;
+	word-spacing: 3px;
+}
+
+.planBox .btn:hover{
+	background: rgba(0, 0, 0, 0.3);
+	/* border: 1px solid #00aeda; */
+	color: #00aeda;
+	border: 1px solid #00aeda;
+	box-shadow: 5px 5px 5px black;
+	text-shadow: 1px 1px 1px #000000;
+	transition: 0.5s;
+}
+
+/* ========================END PRICE SECTION========================== */
+
+#contact{
+	/* background: rgba(52, 152, 219,0.95); */
+	background: #2c3e50;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	width: 100%;
+	height: 70vh;
+}
+
+.contactBox{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 150px;
+}
+
+.contactBox h1{
+	text-transform: capitalize;
+	color: white;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+.contactBox p{
+	color: white;
+	text-align: center;
+	margin: 0px 500px 40px 500px ;
+}
+
+.contactUser input{
+	width: 380px;
+	height: 40px;
+	padding: 20px 20px;
+	border: none;
+	outline: none;
+	border-radius: 5px 0px 0px 5px;
+	box-shadow: 5px 5px 5px black;
+}
+
+.contactUser input::placeholder{
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+.contactUser .btn{
+	padding: 10px 30px;
+	height:41px;
+	font-size: 14px;
+	/* background: rgba(45, 52, 54,1.0); */
+	background: black;
+	border: 1px solid black;
+	outline: none;
+	border-radius: 0px 5px 5px 0px;
+	color: #00aeda;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px black;
+}
+
+.contactUser .btn:hover{
+	color: white;
+	border: 1px solid white;
+	background: rgba(0, 0, 0, 0.7);
+	transition: all 0.8s ;
+}
+/* =====================END CONTACT SECTION=================== */
+
+/* --------------------START FOOTER SECTION---------------------- */
+#footer{
+	width: 100%;
+	padding: 70px 0px;
+	background: rgba(0, 0, 0, 0.9); 
+	display: flex;
+}
+
+.aboutTrainer{
+	width: 50%;
+	padding: 0px 90px;
+	box-sizing: border-box;
+}
+
+.aboutTrainer h2{
+	font-size: 30px;
+	color: white;
+}
+
+.aboutTrainer p{
+	font-size: 18px;
+	color: silver;
+	margin: 15px 0px;
+}
+
+.social{
+	width: 20%;
+	padding: 0px 40px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.social h2{
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+}
+.social a{
+	color: #00aeda;
+	display: block;
+	margin: 5px 0px;
+}
+
+.social a:hover{
+	color: white;
+}
+
+.contactUs{
+	width: 30%;
+	padding: 0px 70px;
+	box-sizing: border-box;
+}
+
+.contactUs h2{
+	font-size: 30px;
+	color: white;
+	margin-bottom: 30px;
+}
+.contactUs p{
+	color: white;
+}
+.contactUs a{
+	display: block;
+	margin-top: 20px;
+	color: #00aeda;
+}
+
+.contactUs a:hover{
+	color: white;
+}
+
+.icon{
+	margin-left:90% ;
+	width: 40px;
+	display: block;
+	padding: 10px 0px 10px 12px;
+	background:#2d3436;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.fa-arrow-up{
+	font-size: 20px;
+	color: #00aeda;
+}
+
+.fa-arrow-up:hover{
+	color: white;
+}
+
+/* --------------------END FOOTER SECTION------------------------ */
